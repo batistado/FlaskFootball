@@ -4,7 +4,7 @@ from sqlalchemy.orm import relationship
 from app.database.base import Base
 
 
-class Teams(Base):
+class Team(Base):
     __tablename__ = 'Teams'
     __table_args__ = (
         UniqueConstraint('Name', name='UniqueTeamName'),
