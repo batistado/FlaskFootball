@@ -6,8 +6,8 @@ class Serializer:
             'name': player.name,
             'rating': player.rating,
             'age': player.age,
-            'team': Serializer.serialize_team(player.team),
-            'position': Serializer.serialize_position(player.position),
+            'team': player.team.name,
+            'position': player.position.name,
         }
 
     @staticmethod
