@@ -16,6 +16,9 @@ class Serializer:
         return {
             'id': team.id,
             'name': team.name,
+            'manager': team.manager,
+            'stadium': team.stadium,
+            'location': team.location,
         }
 
     @staticmethod

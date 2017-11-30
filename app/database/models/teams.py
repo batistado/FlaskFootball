@@ -12,6 +12,10 @@ class Team(Base):
 
     id = Column('Id', Integer, primary_key=True)
     name = Column('Name', String(255), nullable=False)
+    stadium = Column('Stadium', String(255))
+    location = Column('Location', String(255))
+    manager = Column('Manager', String(255))
+    logo = Column('Logo', String(255))
 
     players = relationship('Player', back_populates='team', cascade='all,delete', passive_deletes=True)
 
