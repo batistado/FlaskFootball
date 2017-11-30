@@ -31,3 +31,11 @@ class PlayersTeamListView(Resource):
 
         return dict(list=[Serializer.serialize_player(player) for player in players])
 
+
+@api.route('/players')
+class PlayersListView(Resource):
+    def get(self):
+        players = db.session.query(Player).all()
+
+        return dict(list=[Serializer.serialize_player(player) for player in players])
+
