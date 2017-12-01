@@ -19,6 +19,7 @@ class Serializer:
             'manager': team.manager,
             'stadium': team.stadium,
             'location': team.location,
+            'logo': team.logo,
         }
 
     @staticmethod
